@@ -153,6 +153,130 @@ View是一个接口，实现类支持不同的View类型（jsp、freemarker、pd
 
 功能需求：商品列表查询
 
+### 环境准备：
+
+数据库：MySQL 5.7   这里的数据库还用我前一个系列的文章《通过项目逐渐深入了解Mybatis》中的数据库 mybatis_test ，里面包含了四张表（items、orderdetail、orders、user）
+
+java 环境：jdk1.8.0_60
+
+IDEA 2016.1.3
+
+Spring MVC版本：Spring 4.1.5
+
+Maven
+
+这里如果还有不了解 Maven的读者，请去稍微了解下就行了，不难的，网上相关的资料还不少呢。
+
+还有就是关于如何在IDEA下创建Spring MVC + Maven的项目，你在谷歌这样搜索关键字“IDEA+Spring MVC + Maven”就会看到会在开源中国博客有两篇博客写的很详细，自己跟着做一遍应该就能够开始自己搭建了，反正我就是这么过来的，为了不让大家走弯路，所以将这个提前告诉下你，可能会方便那些还不知道的同学，如果是老司机，请忽略我上面所扯的。
+
+我们所需要的一些依赖是Spring所有的jar包，还有一些其他的。
+
+接下来就直接把 `pom.xml` 文件写出来吧
+
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.zhisheng</groupId>
+  <artifactId>springmvc</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>springmvc Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <spring.version>4.1.5.RELEASE</spring.version>
+    <spring-data.version>1.2.0.RELEASE</spring-data.version>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>1.10.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.34</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${spring-data.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.21</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>springmvc</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+
+
+
+
+
+
+
+
 
 
 
