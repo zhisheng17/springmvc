@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="springmvc" />
+        <module name="springmvc_mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springmvc" target="1.8" />
+      <module name="springmvc_mybatis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

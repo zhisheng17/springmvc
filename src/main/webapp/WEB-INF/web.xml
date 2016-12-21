@@ -6,10 +6,16 @@
 
   <display-name>SpringMVCDemo Web Application</display-name>
 
+  <!--新建 mvc-dispatcher-servlet.xml（-servlet前面是在servlet里面定义的servlet名）-->
   <servlet>
     <servlet-name>mvc-dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
+    <!--如果不配置contextConfigLocation的话，默认会加载的是WEB-INF/servlet-name（即mvc-dispatcher）-servlet.xml-->
+    <!--<init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:mvc-dispatcher-servlet.xml</param-value>
+    </init-param>-->
   </servlet>
 
   <!--用于拦截请求（url-pattern为 / ，说明拦截所有请求），并交由Spring MVC的后台控制器来处理。这一项配置是必须的-->
