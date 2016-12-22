@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="696473585">
+  <component name="DataSourceManagerImpl" format="xml" hash="604356672">
     <data-source source="LOCAL" name="MySQL - springdemo@localhost" uuid="fa2dfa00-79e9-4acb-ba1b-70ee354150e6">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

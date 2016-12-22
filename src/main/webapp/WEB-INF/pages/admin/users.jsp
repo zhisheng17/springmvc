@@ -61,7 +61,7 @@
                     <td>
                         <a href="/admin/users/show/${user.id}" type="button" class="btn btn-sm btn-success">详情</a>
                         <a href="/admin/users/update/${user.id}" type="button" class="btn btn-sm btn-warning">修改</a>
-                        <a href="/admin/users/delete/${user.id}" type="button" class="btn btn-sm btn-danger">删除</a>
+                        <a href="/admin/users/delete/${user.id}" type="button" onclick="return confirm('确定删除吗？')" class="btn btn-sm btn-danger">删除</a>
                     </td>
                 </tr>
             </c:forEach>

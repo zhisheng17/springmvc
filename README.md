@@ -38,8 +38,10 @@ Spring MVC Study
 
 + 删除用户
 
+  ![](pic/deleteUser.jpg)
 
-
+<br>
+<br>
 
 **博客管理模块**
 
@@ -61,7 +63,7 @@ Spring MVC Study
 
 + 删除博客
 
-
+  ![](pic/deleteBlog.jpg)
 
 
 
