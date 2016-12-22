@@ -14,7 +14,9 @@ Spring MVC Study
 
 ### 1、Spring MVC + Hibernate JPA + Bootstrap 搭建的博客系统 Demo
 
-截图：
+**数据库**：[springdemo.sql](sql/springdemo.sql)
+
+**截图**：
 
 **用户管理模块**
 
