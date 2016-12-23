@@ -16,7 +16,16 @@ Spring MVC Study
 
 **数据库**：[springdemo.sql](sql/springdemo.sql)
 
-**截图**：
+#### 截图：
+
+**首页**
+
+  ![](pic/index.jpg)
+
+
+<br>
+<br>
+
 
 **用户管理模块**
 

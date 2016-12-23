@@ -30,6 +30,14 @@
 
 <h3>出现此页面，说明配置成功。</h3>
 
+
+
+<h3>SpringMVC 博客系统-用户管理<a href="/admin/users" type="button" class="btn btn-sm btn-success">详情</a></h3>
+
+
+<h3>SpringMVC 博客系统-博客管理<a href="/admin/blogs" type="button" class="btn btn-sm btn-success">详情</a></h3>
+
+
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
